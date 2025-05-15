@@ -62,13 +62,13 @@
                 Download:
 
                 {% if post.get_file_ext == 'csv' %}
-                    <i class="fas fa-file-csv"></i>
+                    <i class="fa-solid fa-file-csv"></i>
                 {% elif post.get_file_ext == 'xlsx' or post.get_file_ext == 'xls' %}
-                    <i class="fas fa-file-excel"></i>
+                    <i class="fa-solid fa-file-excel"></i>
                 {% elif post.get_file_ext == 'docx' or post.get_file_ext == 'doc' %}
-                    <i class="fas fa-file-word"></i>
+                    <i class="fa-solid fa-file-word"></i>
                 {% else %}
-                    <i class="far fa-file"></i>
+                    <i class="fa-regular fa-file"></i>
                 {% endif %}
 
                 {{ post.get_file_name }}
