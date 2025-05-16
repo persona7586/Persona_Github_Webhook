@@ -172,6 +172,7 @@ cython_debug/
 .idea/
 migrations/
 _media/
+.idea/
 
 ### macOS ###
 # General
