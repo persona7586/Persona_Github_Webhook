@@ -9,6 +9,8 @@ class TestView(TestCase):
 
         self.user_taemun1 = User.objects.create_user(username='taemun1', password='somepassword')
         self.user_taemun2 = User.objects.create_user(username='taemun2', password='somepassword')
+        self.user_obama.is_staff = True
+        self.user_obama.save()
 
         self.category_programming = Category.objects.create(name='programming', slug='programming')
         self.category_music = Category.objects.create(name='music', slug='music')
