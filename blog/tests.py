@@ -107,17 +107,19 @@ class TestView(TestCase):
 
     def test_post_detail(self):
         # 1-1 Post 하나
+        '''
         post_001 = Post.objects.create(
             title='첫 번째 포스트입니다.',
             content='Hello World.',
             author=self.user_taemun1,
         )
+        '''
         # 1-2 Post url = '/blog/1/'
-        self.assertEqual(post_001.get_absolute_url(), '/blog/1/')
+        self.assertEqual(self.post_001.get_absolute_url(), '/blog/1/')
 
         # 2-0 첫 번째 포스트의 상세 페이지 테스트
         # 2-1 첫 번째 포스트의 url 접근 정상 작동(status code: 200).
-        respons = self.client.get(post_001.get_absolute_url())
+        respons = self.client.get(self.post_001.get_absolute_url())
         self.assertEqual(respons.status_code, 200)
         soup = BeautifulSoup(respons.content, 'html.parser')
 
@@ -126,17 +128,20 @@ class TestView(TestCase):
         #self.assertIn('Blog', navbar.text)
         #slef.assertIn('About Me', navbar.text)
         self.navbar_test(soup)
+        self.category_card_test(soup)
 
         # 2-3 첫 번째 포스트의 제목 웹 브라우저 탭 타이틀에 존재
-        self.assertIn(post_001.title, soup.title.text)
+        self.assertIn(self.post_001.title, soup.title.text)
 
         # 2-4 첫 번째 포스트의 제목 포스트 영역 존재
         main_area = soup.find('div', id='main-area')
         post_area = main_area.find('div', id='post-area')
-        self.assertIn(post_001.title, post_area.text)
+        self.assertIn(self.post_001.title, post_area.text)
+        self.assertIn(self.category_programming.name, post_area.text)
 
         # 2-5 첫 번째 포스트의 author 포스트 영역 존재
         self.assertIn(self.user_taemun1.username.upper(), post_area.text)
+        self.assertIn(self.post_001.content, post_area.text)
 
         # 2-6 첫 번째 포스트의 content 포스트 영역 존재
         self.assertIn(post_001.content, post_area.text)
