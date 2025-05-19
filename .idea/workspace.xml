@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79065a5d-e3d3-40de-a16f-8d4681cac5a5" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/single_pages/static/single_pages/css/about_me.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_pages/static/single_pages/css/landing.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_pages/static/single_pages/images/landingpage.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/templates/single_pages/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/templates/single_pages/landing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/venv/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +55,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\DjangoProject\single_pages\static\single_pages\images" />
       <recent name="C:\Users\user\DjangoProject\blog\static\blog\bootstrap" />
     </key>
   </component>
@@ -71,7 +77,7 @@
       <updated>1746742590019</updated>
       <workItem from="1746742591069" duration="8000" />
       <workItem from="1746855112151" duration="50786000" />
-      <workItem from="1747260098406" duration="93178000" />
+      <workItem from="1747260098406" duration="99284000" />
     </task>
     <servers />
   </component>
