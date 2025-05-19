@@ -10,6 +10,7 @@ from django.core.exceptions import PermissionDenied
 class PostList(ListView):
     model = Post
     ordering = '-pk'
+    paginate_by = 5
 
     def get_context_data(self, **kwargs):
         context = super(PostDetail, self).get_context_data()
