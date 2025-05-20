@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79065a5d-e3d3-40de-a16f-8d4681cac5a5" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/single_pages/static/single_pages/images/my_back.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_pages/templates/single_pages/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/templates/single_pages/about_me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/static/single_pages/css/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/static/single_pages/css/landing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/static/single_pages/images/landingpage.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <updated>1746742590019</updated>
       <workItem from="1746742591069" duration="8000" />
       <workItem from="1746855112151" duration="50786000" />
-      <workItem from="1747260098406" duration="112511000" />
+      <workItem from="1747260098406" duration="113214000" />
     </task>
     <servers />
   </component>
